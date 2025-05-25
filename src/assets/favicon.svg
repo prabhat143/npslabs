@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="#0074D9" />
+  <path d="M25 40 L45 40 L45 30 L75 50 L45 70 L45 60 L25 60 Z" fill="white" />
+  <text x="50" y="85" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="16" fill="white">NSP</text>
+</svg>

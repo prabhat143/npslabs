@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold leading-tight;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 focus:ring-secondary-500;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-50 focus:ring-primary-500;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 max-w-3xl mb-12;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+
+  .wavy-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%230074D9' stop-opacity='0.05'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%23FFFFFF' width='1200' height='800'/%3E%3Cg fill-opacity='0.05'%3E%3Cpath fill='url(%23a)' d='M0 0C10 10.7 20 16.3 30 16.7 40 17 50 12 60 2 70-8 80-13 90-13 100-13 110-8 120 2 130 12 140 17 150 16.7 160 16.3 170 10.7 180 0 190-10.7 200-16.3 210-16.7 220-17 230-12 240-2 250 8 260 13 270 13 280 13 290 8 300-2 310-12 320-17 330-16.7 340-16.3 350-10.7 360 0 370 10.7 380 16.3 390 16.7 400 17 410 12 420 2 430-8 440-13 450-13 460-13 470-8 480 2 490 12 500 17 510 16.7 520 16.3 530 10.7 540 0 550-10.7 560-16.3 570-16.7 580-17 590-12 600-2 610 8 620 13 630 13 640 13 650 8 660-2 670-12 680-17 690-16.7 700-16.3 710-10.7 720 0 730 10.7 740 16.3 750 16.7 760 17 770 12 780 2 790-8 800-13 810-13 820-13 830-8 840 2 850 12 860 17 870 16.7 880 16.3 890 10.7 900 0 910-10.7 920-16.3 930-16.7 940-17 950-12 960-2 970 8 980 13 990 13 1000 13 1010 8 1020-2 1030-12 1040-17 1050-16.7 1060-16.3 1070-10.7 1080 0 1090 10.7 1100 16.3 1110 16.7 1120 17 1130 12 1140 2 1150-8 1160-13 1170-13 1180-13 1190-8 1200-2 1200 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
